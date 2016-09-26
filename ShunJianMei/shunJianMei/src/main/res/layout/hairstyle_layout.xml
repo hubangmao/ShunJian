@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e0e0e0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/main_grey_bg" />
+
+    <com.zachary.hodge.uicomp.widget.refreshable.PullToRefreshGridView
+        android:id="@+id/pulltorefreshgridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:minHeight="200dp"
+        android:dividerPadding="10dp"
+        android:background="@color/main_grey_bg"
+        android:divider="@color/main_grey_bg" >
+    </com.zachary.hodge.uicomp.widget.refreshable.PullToRefreshGridView>
+
+</LinearLayout>

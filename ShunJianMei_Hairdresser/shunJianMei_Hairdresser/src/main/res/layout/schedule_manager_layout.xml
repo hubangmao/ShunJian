@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_grey_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uicomp_title_bar_red_bg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15px"
+        android:background="@color/grey" />
+
+    <LinearLayout
+        android:id="@+id/ll_schedule_manager_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_ll_schedule_manager_layout_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="99.9"
+            android:paddingBottom="10dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="10dp"
+            android:text="一键设置"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_18" />
+
+        <ImageView
+            android:id="@+id/iv_ll_schedule_imageView_right_set"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/forward_right_red" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:background="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_schedule_new_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="12dp"
+            android:text="@string/schedule_fragment_textview1"
+            android:textColor="#555555"
+            android:textSize="@dimen/textsize_14" />
+
+        <TextView
+            android:id="@+id/schedule_radiobutton_allright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/radiobutton_false"
+            android:text="当日工作" />
+
+        <TextView
+            android:id="@+id/schedule_radiobutton_allfalse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/radiobutton_false"
+            android:text="当日休息" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/schedule_imageView_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/forward_left_red" />
+
+        <HorizontalScrollView
+            android:id="@+id/schedule_horizontalScrollView_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:scrollbars="none" >
+
+            <RadioGroup
+                android:id="@+id/schedule_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+            </RadioGroup>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/schedule_imageView_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/forward_right_red" />
+    </FrameLayout>
+
+    <GridView
+        android:id="@+id/schedule_gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/materialget_radiobutton_select_gray_date"
+        android:horizontalSpacing="3dp"
+        android:numColumns="4"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:rowCount="3"
+        android:scrollbars="none"
+        android:visibility="visible"
+        android:verticalSpacing="5dp" >
+    </GridView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:id="@+id/schedule_linearlayout_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/schedule_button_setting"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/red"
+                    android:text="设置"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_15" />
+
+                <Button
+                    android:id="@+id/schedule_button_save"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue"
+                    android:text="保存"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_15" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/fl_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_schedule_manager_work_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="99.9"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="10dp"
+                    android:text="日程管理"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_16" />
+
+                <ImageView
+                    android:id="@+id/iv_fl_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/forward_right_red" />
+            </LinearLayout>
+
+            <View
+                android:paddingTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:background="@color/grey" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

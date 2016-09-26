@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="耗时"
+            android:textSize="@dimen/textsize_18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right_gray" />
+
+        <TextView
+            android:id="@+id/hair_style_time_hourmine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text1"
+            android:layout_alignBottom="@+id/text1"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/text1"
+            android:text="1小时20分钟"
+            android:textSize="@dimen/textsize_18" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/btn_time_select_sumbit"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@color/red"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_16" />
+
+        <Button
+            android:id="@+id/btn_time_select_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignBaseline="@+id/btn_time_select_sumbit"
+            android:layout_alignBottom="@+id/btn_time_select_sumbit"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/btn_time_select_sumbit"
+            android:background="@color/gray_d8"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="取消"
+            android:textColor="@color/gray_ab"
+            android:textSize="@dimen/textsize_16" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <NumberPicker
+            android:id="@+id/num_time_select_hourpicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp" />
+
+        
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="小时"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_18" />
+
+        <NumberPicker
+            android:id="@+id/num_time_select_minuteicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="分钟"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_18" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uicomp_title_bar_red_bg" />
+
+    <TextView
+        android:id="@+id/tv_order_share_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="评论已经提交成功"
+        android:textColor="@color/black33"
+        android:textSize="@dimen/textsize_17" />
+
+    <ImageView
+        android:id="@+id/iv_order_share_red"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/tv_order_share_comment"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/tv_order_share_comment"
+        android:src="@drawable/select_red" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_order_share_comment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="将在顺间美发的体验分享给你的好友吧!"
+        android:textColor="@color/black33"
+        android:textSize="@dimen/textsize_15" />
+
+    <TextView
+        android:id="@+id/tv_order_share_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="选择照片"
+        android:textColor="@color/gray_ab"
+        android:textSize="@dimen/textsize_14" />
+
+    <cc.ruit.shunjianmei.util.view.MyGridView
+        android:id="@+id/mgv_sharaphoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_order_share_photo"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="3"
+        android:scrollbars="@null"
+        android:verticalSpacing="10dp" >
+    </cc.ruit.shunjianmei.util.view.MyGridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/mgv_sharaphoto"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp" >
+
+        <Button
+            android:id="@+id/btn_shara_weixinfriend"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/pay_balance_bg"
+            android:text="分享给微信好友"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_12" />
+
+        <Button
+            android:id="@+id/btn_friend_quan"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/pay_zhifubao_bg"
+            android:text="分享给朋友圈"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_12" />
+
+        <Button
+            android:id="@+id/btn_shara_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_round_gray_1"
+            android:text="给钱都不要"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_12" />
+    </LinearLayout>
+
+</RelativeLayout>

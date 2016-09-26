@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/schedule_textview_businessname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/address_red"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="大象造型(太阳宫店)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_15" />
+
+    <TextView
+        android:id="@+id/schedule_textview_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="地址：三里屯"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_14" />
+
+</LinearLayout>

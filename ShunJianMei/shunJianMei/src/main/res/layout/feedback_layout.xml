@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container_mybalance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_grey_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uicomp_title_bar_red_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的联系方式:"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_15" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp" >
+
+            <EditText
+                android:id="@+id/et_phone_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="您的手机号或邮箱"
+                android:singleLine="true"
+                android:textColor="@color/black33"
+                android:textSize="@dimen/textsize_15" />
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/et_phone_feedback"
+                android:background="@color/gray_d8"/>
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <EditText 
+        android:id="@+id/et_content_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/textsize_13"
+        android:textColor="@color/black33"
+        android:padding="5dp"
+        android:gravity="top"
+        android:hint="您的意见是我们前进的动力"
+        android:background="@drawable/feedback_edittext_bg"/>
+    
+    <TextView 
+        android:id="@+id/tv_last_count"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="500/500"
+        android:gravity="right"/>
+
+    <Button
+        android:id="@+id/btn_commit_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_red"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_15" />
+
+</LinearLayout>

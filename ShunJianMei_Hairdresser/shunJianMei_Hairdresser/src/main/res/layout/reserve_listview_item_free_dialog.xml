@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/tv_left_reserve_dialog_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="女士中长发"
+        android:textColor="@color/gray_ab"
+        android:textSize="@dimen/textsize_14" />
+
+    <TextView
+        android:id="@+id/tv_right_lv_reserve_dialog_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:text="3小时"
+        android:textColor="@color/gray_ab"
+        android:textSize="@dimen/textsize_14"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_left_reserve_dialog_name"
+        android:background="#e0e0e0" />
+
+    <TextView
+        android:id="@+id/tv_show_package_details__dialog_content"
+      android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="11dp"
+        android:maxLines="3"
+        android:text="发ewrewrew"
+        android:textColor="@color/black33"
+        android:textSize="12dp"
+        android:visibility="visible"/>
+
+    <View
+        android:id="@+id/view22"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/tv_show_package_details__dialog_content"
+        android:background="#e0e0e0" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view22"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_long_hair_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="长发 :￥345.0"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_in_hair_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="中发  :￥345.0"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_short_hair_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="短发  :￥345.0"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linear"
+        android:background="#e0e0e0" />
+
+</RelativeLayout>

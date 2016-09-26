@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container_mybalance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_grey_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uicomp_title_bar_red_bg" />
+
+    <com.zachary.hodge.uicomp.widget.refreshable.PullToRefreshListView
+        android:id="@+id/pulltorefreshlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#f2f2f2"
+        android:divider="#f2f2f2"
+        android:listSelector="#00000000" >
+    </com.zachary.hodge.uicomp.widget.refreshable.PullToRefreshListView>
+
+</LinearLayout>

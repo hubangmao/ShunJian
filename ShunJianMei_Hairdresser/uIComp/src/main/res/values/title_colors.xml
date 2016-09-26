@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="title_left_tv_color">#ffffff</color>
+    <color name="title_right_tv_color">#ffffff</color>
+    <color name="title_title_tv_color">#ffffff</color>
+    <color name="title_left_tv_color2">#000000</color>
+    <color name="title_right_tv_color2">#000000</color>
+    <color name="title_title_tv_color2">#000000</color>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uicomp_title_bar_red_bg" />
+
+    <LinearLayout
+        android:id="@+id/ll_filter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/ll_hair_style"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_hair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发型类型"
+                android:textColor="@color/black33"
+                android:textSize="@dimen/textsize_14" />
+
+            <ImageView
+                android:id="@+id/iv_hair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/arrow_down" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_ab" />
+
+        <LinearLayout
+            android:id="@+id/ll_hair_price"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格排序" 
+                android:textColor="@color/black33"
+                android:textSize="@dimen/textsize_14"/>
+
+            <ImageView
+                android:id="@+id/iv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/arrow_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_gv_hair"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.zachary.hodge.uicomp.widget.refreshable.PullToRefreshGridView
+            android:id="@+id/gv_hair"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:listSelector="@color/transparent"
+            android:numColumns="2"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:scrollbars="@null"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp" >
+        </com.zachary.hodge.uicomp.widget.refreshable.PullToRefreshGridView>
+    </FrameLayout>
+
+</LinearLayout>

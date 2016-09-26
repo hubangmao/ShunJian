@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/materialget_textview_chooseaddress"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_16" />
+
+    <Spinner
+        android:id="@+id/materialget_spinner_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/materialget_spinner_bg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/materialget_textview_choosetime"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_16" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/materialget_radiobutton_choosetime1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/materialget_fragment_radiobutton_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="7-30" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <RadioButton
+            android:id="@+id/materialget_radiobutton_choosetime2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/materialget_fragment_radiobutton_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="7-30" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <RadioButton
+            android:id="@+id/materialget_radiobutton_choosetime3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/materialget_fragment_radiobutton_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="7-30" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <RadioButton
+            android:id="@+id/materialget_radiobutton_choosetime4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/materialget_fragment_radiobutton_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="7-30" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <RadioButton
+            android:id="@+id/materialget_radiobutton_choosetime5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/materialget_fragment_radiobutton_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="7-30" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <RadioButton
+            android:id="@+id/materialget_radiobutton_choosetime6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/materialget_fragment_radiobutton_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="7-30" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <RadioButton
+            android:id="@+id/materialget_radiobutton_choosetime7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/materialget_fragment_radiobutton_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="7-30" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="@string/materialget_textview_choosethings"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/materialget_spinner_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/materialget_spinner_bg" />
+
+        <Spinner
+            android:id="@+id/materialget_spinner_product_faction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/materialget_spinner_bg" />
+
+        <Spinner
+            android:id="@+id/materialget_spinner_product_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/materialget_spinner_bg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/materialget_fragment_button_add"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <EditText
+                android:id="@+id/materialget_edittext_product_num"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="number"
+                android:minWidth="10dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/materialget_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/gray_d8"
+        android:dividerHeight="1px"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/materialget_linearlayout_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/materialget_fragment_button_add"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/materialget_button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/materialget_add_icon"
+            android:gravity="center"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp"
+            android:text="@string/materialget_button_add"
+            android:textSize="@dimen/textsize_18" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/materialget_button_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/materialget_button_ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_18" />
+
+</LinearLayout>

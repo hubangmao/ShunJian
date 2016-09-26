@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#e53123" >
+
+        <LinearLayout
+            android:id="@+id/ll_city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北京市"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/textsize_15"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/iv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/arrow_down_gray" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:singleLine="true"
+            android:text="title"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/iv_right_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#00000000"
+            android:padding="11dp"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <com.zachary.hodge.uicomp.widget.refreshable.PullToRefreshListView
+            android:id="@+id/mylistview_find"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            android:scrollbars="@null" >
+        </com.zachary.hodge.uicomp.widget.refreshable.PullToRefreshListView>
+    </FrameLayout>
+
+</LinearLayout>

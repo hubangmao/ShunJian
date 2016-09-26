@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_balance_mybalance"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/tv_ordercode_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="订单编号"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textsize_12" />
+
+    <TextView
+        android:id="@+id/tv_ordercode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_ordercode_text"
+        android:text="302092910"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textsize_12" />
+
+    <TextView
+        android:id="@+id/tv_paytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:text="2015-3-11 10:26"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textsize_12" />
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ordercode_text"
+        android:layout_marginLeft="10dp"
+        android:text="女士长发"
+        android:textColor="@color/black33"
+        android:textSize="@dimen/textsize_15" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ordercode_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="¥132"
+        android:textColor="@color/red_f3"
+        android:textSize="@dimen/textsize_15" />
+    
+    <TextView
+        android:id="@+id/tv_amount_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ordercode_text"
+        android:layout_toLeftOf="@id/tv_amount"
+        android:layout_marginRight="10dp"
+        android:text=""
+        android:textColor="@color/black33"
+        android:textSize="@dimen/textsize_15" />
+    
+       <TextView
+        android:id="@+id/tv_reservetime_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_remark"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="预约时间:"
+        android:textColor="@color/black33"
+        android:textSize="@dimen/textsize_15" />
+       
+        <TextView
+        android:id="@+id/tv_reservetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_remark"
+        android:layout_toRightOf="@id/tv_reservetime_text"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="@color/black33"
+        android:textSize="@dimen/textsize_15" />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_reservetime"
+        android:layout_marginTop="10dp"
+        android:background="#e0e0e0"/>
+    
+</RelativeLayout>

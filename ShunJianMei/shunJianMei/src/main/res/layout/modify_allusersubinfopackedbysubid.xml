@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_photo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <cc.ruit.shunjianmei.reserve.ListViewForScrollView
+        android:id="@+id/allusersubinfopakc_lsitview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </cc.ruit.shunjianmei.reserve.ListViewForScrollView>
+
+    <TextView
+        android:id="@+id/tv_modify_alluser"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/allusersubinfopakc_lsitview" />
+
+</RelativeLayout>

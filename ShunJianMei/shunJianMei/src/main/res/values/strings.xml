@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">顺间</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- 侧边栏名字 -->
+    <string name="home_slidingmenu_item_activity">奖励活动</string>
+    <string name="home_slidingmenu_item_income">收入明细</string>
+    <string name="home_slidingmenu_item_qqgroup">加入官方QQ群</string>
+    <string name="home_slidingmenu_item_activities">奖励活动</string>
+    <string name="home_slidingmenu_item_ruledesc">规则说明</string>
+    <string name="home_slidingmenu_item_withdraw">提现记录</string>
+    <string name="home_slidingmenu_item_setting">设置</string>
+
+    <!-- tab名字 -->
+    <string name="home_tab_work">赚钱</string>
+    <string name="home_tab_student">收徒</string>
+    <string name="home_tab_home">首页</string>
+    <string name="home_tab_withdraw">提现</string>
+    <string name="home_tab_message">消息</string>
+
+    <!-- 网络问题 -->
+    <string name="no_networks_found">没有网络连接，请检查网络</string>
+    <string name="request_failure">服务器请求失败,请稍后在试!</string>
+    
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e0e0e0" />
+
+    <com.zachary.hodge.uicomp.widget.refreshable.PullToRefreshListView
+        android:id="@+id/pulltorefreshlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@color/main_grey_bg" >
+    </com.zachary.hodge.uicomp.widget.refreshable.PullToRefreshListView>
+
+</LinearLayout>

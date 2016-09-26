@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/schedule_gridview_item_time"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/gray_d8"
+        android:gravity="center"
+        android:tag="0"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_13" />
+
+</LinearLayout>

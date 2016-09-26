@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rl_reserve_listview_item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btn_select_icon_reserve" 
+        android:layout_marginRight="30dp"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_location_icon_reserve"
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/localtionaddress" />
+
+        <TextView
+            android:id="@+id/tv_store_reserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_location_icon_reserve"
+            android:text="大象造型(三里屯店)"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_14" />
+
+        <TextView
+            android:id="@+id/tv_address_text_reserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_store_reserve"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="地址:"
+            android:textColor="@color/gray_ab"
+            android:textSize="@dimen/textsize_12" />
+
+        <TextView
+            android:id="@+id/tv_address_reserve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_store_reserve"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_address_text_reserve"
+            android:singleLine="true"
+            android:text="双井东柏街时代国际底商10号院4号楼02底商"
+            android:textColor="@color/gray_ab"
+            android:textSize="@dimen/textsize_12" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/btn_select_icon_reserve"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/reserve_btn_unselected" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rl_reserve_listview_item_layout"
+        android:layout_marginTop="8dp"
+        android:background="#e0e0e0" />
+
+</RelativeLayout>

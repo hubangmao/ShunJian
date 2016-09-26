@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/btn_master_select_sumbit"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@color/red"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_16" />
+
+        <Button
+            android:id="@+id/btn_master_select_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignBaseline="@+id/btn_master_select_sumbit"
+            android:layout_alignBottom="@+id/btn_master_select_sumbit"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/btn_master_select_sumbit"
+            android:background="@color/gray_d8"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="取消"
+            android:textColor="@color/gray_ab"
+            android:textSize="@dimen/textsize_16" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <ListView
+            android:id="@+id/master_select_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_16"
+            android:layout_marginRight="10dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#e53123" >
+
+        <ImageView
+            android:id="@+id/iv_OrderDetails_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="#00000000"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_left_white" />
+
+        <TextView
+            android:id="@+id/tv_OrderDetails_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutcenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@id/relativeLayoutTop" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_hair_style_jianjie"
+                        android:layout_width="170dp"
+                        android:layout_height="220dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/gray_d8" />
+
+                    <ImageView
+                        android:id="@+id/bt_jianjie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/shangchuan2x" />
+
+                    <TextView
+                        android:id="@+id/tv_jianjie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/iv_hair_style_jianjie"
+                        android:layout_alignParentTop="true"
+                        android:text="用于简介"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+				<View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/white" />                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/iv_hair_style_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="440dp"
+                        android:scaleType="centerCrop"
+                        android:background="@color/gray_d8" />
+
+                    <ImageView
+                        android:id="@+id/bt_detailes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/shangchuan2x" />
+
+                    <TextView
+                        android:id="@+id/tv_detailes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="用于详情"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray_e5"
+                     />
+					
+                <cc.ruit.shunjianmei.home.manager.MyGridView
+                    android:id="@+id/gv_hair_style_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3"
+                    android:padding="10dp" >
+                </cc.ruit.shunjianmei.home.manager.MyGridView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/gray_e5" />
+
+                <cc.ruit.shunjianmei.home.manager.MyListView
+                    android:id="@+id/lv_hair_style_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </cc.ruit.shunjianmei.home.manager.MyListView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/gray_e5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/hair_style_intro"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="top|left"
+                        android:hint="相关描述"
+                        android:textSize="@dimen/textsize_16"
+                        android:textColor="@color/black33"
+                        android:maxLength="200" />
+
+                    <TextView
+                        android:id="@+id/hair_style_ts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:text="10-200个字"
+                        android:textColor="@color/gray_df" />
+                </RelativeLayout>
+                 <View
+                    android:layout_width="match_parent"
+                    android:paddingBottom="50dp"
+                    android:layout_height="10dp"
+                    android:background="@color/gray_e5" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_style_detail_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/relativeLayoutcenter"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red" >
+
+        <Button
+            android:id="@+id/hair_style_detail_save"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/save_hairstyle_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/red_f3"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/textsize_14" />
+    </RelativeLayout>
+
+</LinearLayout>

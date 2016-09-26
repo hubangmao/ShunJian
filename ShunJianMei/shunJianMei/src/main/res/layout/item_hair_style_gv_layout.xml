@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/gray_fa"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_hair_style_gv_item_bg"
+        android:layout_width="170dp"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tu12x" />
+
+    <RelativeLayout
+        android:id="@+id/rt_hair_style_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_hair_style_gv_item_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_16" />
+
+        <TextView
+            android:id="@+id/tv_hair_style_gv_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="¥0.00"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_16" />
+
+        <TextView
+            android:id="@+id/tv_hair_style_gv_item_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_hair_style_gv_item_style"
+            android:layout_below="@id/tv_hair_style_gv_item_style"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="0人"
+            android:textSize="@dimen/textsize_15"
+            android:textColor="@color/gray_ab" />
+    </RelativeLayout>
+
+</LinearLayout>

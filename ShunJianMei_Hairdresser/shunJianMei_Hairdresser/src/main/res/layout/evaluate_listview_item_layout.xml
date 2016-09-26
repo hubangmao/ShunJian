@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_balance_mybalance"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/iv_photo_evaluate"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tx_woman" />
+
+    <TextView
+        android:id="@+id/tv_name_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/iv_photo_evaluate"
+        android:text="长发"
+        android:textColor="@color/black33"
+        android:textSize="@dimen/textsize_15" />
+
+  
+    <RatingBar
+        android:id="@+id/ratingbar_evaluate"
+        style="@style/MyCommentRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/tv_name_evaluate"
+        android:layout_toRightOf="@id/iv_photo_evaluate"
+        android:isIndicator="true"
+        android:numStars="5"/>
+
+    <TextView
+        android:id="@+id/tv_date_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_name_evaluate"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text="2015-9-15 10:30"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textsize_12" />
+
+    <TextView
+        android:id="@+id/tv_evalution_evaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_photo_evaluate"
+        android:layout_margin="10dp"
+        android:text="这是评论"
+        android:textColor="@color/black33"
+        android:textSize="@dimen/textsize_14" />
+
+    <LinearLayout
+        android:id="@+id/ll_images_evaluate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_evalution_evaluate"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/ll_images_evaluate"
+        android:layout_marginTop="20dp"
+        android:background="#e0e0e0" />
+
+</RelativeLayout>

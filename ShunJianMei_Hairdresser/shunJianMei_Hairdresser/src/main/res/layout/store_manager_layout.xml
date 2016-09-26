@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uicomp_title_bar_red_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/ll_star"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="环境星级"
+                android:textColor="@color/black33"
+                android:textSize="@dimen/textsize_14" />
+
+            <ImageView
+                android:id="@+id/iv_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/arrow_down" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#e0e0e0" />
+
+        <LinearLayout
+            android:id="@+id/ll_order"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_order_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接单"
+                android:textColor="@color/black33"
+                android:textSize="@dimen/textsize_14" />
+
+            <ImageView
+                android:id="@+id/iv_order_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/arrow_down" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#e0e0e0" />
+
+        <LinearLayout
+            android:id="@+id/ll_distance"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距离"
+                android:textColor="@color/black33"
+                android:textSize="@dimen/textsize_14" />
+
+            <ImageView
+                android:id="@+id/iv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/arrow_down" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#e0e0e0" />
+
+        <LinearLayout
+            android:id="@+id/ll_parking"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_parking_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="停车位"
+                android:textColor="@color/black33"
+                android:textSize="@dimen/textsize_14" />
+
+            <ImageView
+                android:id="@+id/iv_parking_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/arrow_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e0e0e0" />
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.zachary.hodge.uicomp.widget.refreshable.PullToRefreshListView
+            android:id="@+id/pulltorefreshlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e0e0e0"
+            android:divider="#e0e0e0" >
+        </com.zachary.hodge.uicomp.widget.refreshable.PullToRefreshListView>
+    </FrameLayout>
+
+</LinearLayout>

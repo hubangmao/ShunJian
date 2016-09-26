@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_grey_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uicomp_title_bar_red_bg" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        layout="@layout/reserve_scrollview_free_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/red_e5" >
+
+        <TextView
+            android:id="@+id/tv_money_text_reserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="应付"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_15" />
+
+        <TextView
+            android:id="@+id/tv_money_reserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_money_text_reserve"
+            android:text="¥0.0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_15" />
+
+        <TextView
+            android:id="@+id/tv_discount_text_reserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_money_reserve"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_money_reserve"
+            android:text="优惠"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_12" />
+
+        <TextView
+            android:id="@+id/tv_discount_reserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_discount_text_reserve"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/tv_discount_text_reserve"
+            android:text="¥0.0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_12" />
+
+        <TextView
+            android:id="@+id/tv_pay_reserve"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/reserve_pay_btn_bg"
+            android:gravity="center"
+            android:text="去支付"
+            android:textColor="@color/red_e5"
+            android:textSize="@dimen/textsize_15" />
+    </RelativeLayout>
+
+</LinearLayout>

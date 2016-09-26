@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/schedule_imageView_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/forward_left_red" />
+
+            <HorizontalScrollView
+                android:id="@+id/schedule_horizontalScrollView_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:scrollbars="none" >
+
+                <RadioGroup
+                    android:id="@+id/schedule_radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </RadioGroup>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/schedule_imageView_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/forward_right_red" />
+        </FrameLayout>
+
+        <cc.ruit.shunjianmei.util.view.MyGridView
+            android:id="@+id/schedule_gridlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/transparent"
+            android:horizontalSpacing="1dp"
+            android:numColumns="4"
+            android:rowCount="3"
+            android:scrollbars="none"
+            android:verticalSpacing="1dp"
+            android:visibility="visible" >
+        </cc.ruit.shunjianmei.util.view.MyGridView>
+
+        <cc.ruit.shunjianmei.util.view.MyListView
+            android:id="@+id/schedule_listlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#00000000"
+            android:scrollbars="@null" >
+        </cc.ruit.shunjianmei.util.view.MyListView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white" />
+    <!--
+        <RelativeLayout
+            android:id="@+id/rl_hairdessert_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e53123"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <Button
+                android:id="@+id/btn_appointment"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_bg_white"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="预约"
+                android:textColor="@color/red_e5" />
+        </RelativeLayout>-->
+
+</LinearLayout>

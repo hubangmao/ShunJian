@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/uicomp_title_bar_red_bg" />
+
+    <com.zachary.hodge.uicomp.widget.refreshable.PullToRefreshScrollView
+        android:id="@+id/PullToRefreshScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                layout="@layout/hair_dressert_details_head_fragment_layout" />
+
+            <View
+                android:id="@+id/viewview1"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/gray_e5" />
+
+            <RelativeLayout
+                android:id="@+id/rela111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingBottom="10dp"
+                     >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_hairdessert_schedule_package"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tv_hairdessert_Schedule_package"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="套餐"
+                            android:textColor="@color/red_e5"
+                            android:textSize="@dimen/textsize_16" />
+
+                        <TextView
+                            android:id="@+id/tv_line_Schedule_package"
+                            android:layout_width="50dp"
+                            android:layout_height="3px"
+                            android:layout_below="@+id/tv_hairdessert_Schedule_package"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/red_e5" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_hairdessert_intro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tv_hairdessert_intros"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="简介"
+                            android:textColor="@color/black33"
+                            android:textSize="@dimen/textsize_16" />
+
+                        <TextView
+                            android:id="@+id/tv_line_intro"
+                            android:layout_width="50dp"
+                            android:layout_height="3px"
+                            android:layout_below="@id/tv_hairdessert_intros"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/red_e5"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_hairdessert_schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tv_hairdessert_Schedules"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="日程"
+                            android:textColor="@color/black33"
+                            android:textSize="@dimen/textsize_16" />
+
+                        <TextView
+                            android:id="@+id/tv_line_Schedule"
+                            android:layout_width="50dp"
+                            android:layout_height="3px"
+                            android:layout_below="@id/tv_hairdessert_Schedules"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/red_e5"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_hairdessert_hairstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tv_hairdessert_hairstyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="发型"
+                            android:textColor="@color/black33"
+                            android:textSize="@dimen/textsize_16" />
+
+                        <TextView
+                            android:id="@+id/tv_line_hairstyle"
+                            android:layout_width="50dp"
+                            android:layout_height="3px"
+                            android:layout_below="@id/tv_hairdessert_hairstyle"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/red_e5"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/viewsss"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3px"
+                    android:layout_marginTop="43dp"
+                    android:background="@color/gray_e5" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/views"
+                android:layout_width="fill_parent"
+                android:layout_height="53px"
+                android:layout_below="@id/linear"
+                android:layout_marginTop="100dp"
+                android:background="#FFCC00"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/fl_hairdessert_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/views" >
+            </FrameLayout>
+        </LinearLayout>
+    </com.zachary.hodge.uicomp.widget.refreshable.PullToRefreshScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_hairdessert_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#e53123"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/btn_intro_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_bg_white"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="预约"
+            android:textColor="@color/red_e5" />
+    </RelativeLayout>
+
+</LinearLayout>

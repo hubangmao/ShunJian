@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uicomp_title_bar_red_bg" />
+
+    <TextView
+        android:id="@+id/tv_modifyorder_ordercode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="加单原因"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_18" />
+
+        <TextView
+            android:id="@+id/ed_modifyorder_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/text_bg_white"
+            android:ems="12"
+            android:paddingLeft="5dp"
+            android:minHeight="40dp"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_15" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="加单价格"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_18" />
+
+        <TextView
+            android:id="@+id/ed_modifyorder_price"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:background="@drawable/text_bg_white"
+            android:ems="12"
+             android:gravity="left|center_vertical"
+            android:textColor="@color/red_e5"
+            android:textSize="@dimen/textsize_15" >
+        </TextView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_modify_balance_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/pay_balance_bg"
+        android:text="余额支付(当前账户余额)"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_15" />
+
+    <Button
+        android:id="@+id/btn_modify_zhifubao_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pay_zhifubao_bg"
+        android:text="支付宝支付"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_15" />
+
+    <Button
+        android:id="@+id/btn_modify_weixin_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pay_weixin_bg"
+        android:text="微信支付"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        android:textSize="@dimen/textsize_15" />
+
+</LinearLayout>

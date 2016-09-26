@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/materialdoing_fragment_listite"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/materialdoing_listitem_textview_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:background="@color/gray_d8"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_16" />
+
+    <TextView
+        android:id="@+id/materialdoing_listitem_textview_faction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_16" />
+
+    <TextView
+        android:id="@+id/materialdoing_listitem_textview_color"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_16"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/materialdoing_listitem_textview_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_16" />
+
+</LinearLayout>

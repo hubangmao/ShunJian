@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_my_schedule_time_or_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:text="预约时间："
+            android:textColor="#D03E3F"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_ll_my_schedule_startHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:paddingBottom="3dp"
+            android:paddingTop="10dp"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_ll_my_schedule_endHour"
+            android:layout_alignBottom="@+id/tv_ll_my_schedule_endHour"
+            android:layout_toRightOf="@+id/tv_ll_my_schedule_startHour"
+            android:text="-"
+            android:textColor="#D03E3F" />
+
+        <TextView
+            android:id="@+id/tv_ll_my_schedule_endHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView3"
+            android:paddingBottom="3dp"
+            android:paddingTop="10dp"
+            android:text="14" />
+
+        <TextView
+            android:id="@+id/tv_ll_my_schedule_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="3dp"
+            android:paddingRight="14dp"
+            android:paddingTop="10dp"
+            android:text="自编辑"
+            android:visibility="gone"
+            android:textColor="#777777"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tv_ll_my_schedule_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="3dp"
+            android:paddingRight="28dp"
+            android:paddingTop="10dp"
+            android:text="顺间"
+            android:visibility="gone"
+            android:textColor="#777777"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_my_schedule_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="13dp"
+            android:text="客人："
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_my_schedule_client"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="联系方式："
+            android:textSize="17dp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/textView1"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/tv_rl_details_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_my_schedule_client"
+            android:layout_alignBottom="@+id/tv_my_schedule_client"
+            android:layout_toRightOf="@+id/tv_my_schedule_client"
+            android:text="jiajia"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_my_schedule_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="18888888888"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/ib_rl_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/call" />
+
+        <RelativeLayout
+            android:id="@+id/rl_item_my_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_my_schedule_mobile"
+            android:layout_alignLeft="@+id/tv_my_schedule_client"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/ib_rl_call" >
+			
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <Button
+            android:id="@+id/btn_rl_details_delete"
+            android:layout_width="53dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.05"
+            android:background="@drawable/btn_red_round"
+            android:gravity="center|center"
+            android:text="删除"
+            android:textColor="#D03E3F"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_rl_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_rl_details_delete"
+            android:layout_alignParentRight="true"
+            android:paddingRight="16dp"
+            android:paddingLeft="160dp"
+            android:paddingBottom="3dp"
+            android:text="详情 >"
+            android:textColor="#777777"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:background="@color/grey" />
+
+</LinearLayout>

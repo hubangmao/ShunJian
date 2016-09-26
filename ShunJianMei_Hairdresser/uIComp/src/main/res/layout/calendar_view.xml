@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_popup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/resetbg_corner"
+    android:orientation="vertical" >
+
+   
+
+    <com.example.timeymdselect.KCalendar
+        android:id="@+id/popupwindow_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" >
+    </com.example.timeymdselect.KCalendar>
+
+  
+
+</LinearLayout>

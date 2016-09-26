@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uicomp_title_bar_red_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:src="@drawable/location_icon" />
+        
+        <TextView
+            android:id="@+id/quickpay_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="18dp"
+            android:text="美发店"
+            android:gravity="center"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_16" />
+
+    </LinearLayout> 
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="#e0e0e0" />
+    
+    <LinearLayout
+        android:id="@+id/quickpay_master"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="美发师:"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_16" />
+        
+        <TextView
+	        android:id="@+id/select_quickpay_master"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="25dp"
+	        android:layout_marginTop="15dp"
+	        android:text="点击选择美发师"
+	        android:gravity="center|left"
+	        android:textColor="@color/gray_ab"
+	        android:textSize="@dimen/textsize_16" />
+        
+    </LinearLayout> 
+    
+    <View
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="10dp"
+       android:background="#f2f2f2" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp" >
+
+        <EditText
+            android:id="@+id/quickpay_input_money"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="请输入支付金额"
+            android:maxLength="10"
+            android:gravity="center|left"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_16" >
+
+            <requestFocus />
+        </EditText>
+        <TextView
+            android:id="@+id/quickpay_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:text="每满200元减5元"
+            android:textColor="@color/red_e5"
+            android:textSize="@dimen/textsize_13" />
+        
+    </RelativeLayout>    
+    
+    <View
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="10dp"
+       android:background="#f2f2f2" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="实付款:"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_16" />
+        <TextView
+            android:id="@+id/quickpay_realpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text="¥0"
+            android:textColor="@color/gray_d8"
+            android:textSize="@dimen/textsize_16" />
+        
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="#e0e0e0" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="优惠额:"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_16" />
+        <TextView
+            android:id="@+id/quickpay_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text="¥0"
+            android:textColor="@color/gray_d8"
+            android:textSize="@dimen/textsize_16" />
+        
+    </LinearLayout>
+    <View
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="10dp"
+       android:background="#f2f2f2" />
+    
+    <Button
+        android:id="@+id/btn_balance_quickpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/pay_balance_bg"
+        android:text="余额支付(¥)"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_15" />
+
+    <Button
+        android:id="@+id/btn_zhifubao_quickpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pay_zhifubao_bg"
+        android:text="支付宝支付"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_15" />
+
+    <Button
+        android:id="@+id/btn_weixin_quickpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pay_weixin_bg"
+        android:text="微信支付"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_15" />
+
+</LinearLayout>

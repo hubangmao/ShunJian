@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_grey_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uicomp_title_bar_red_bg" />
+
+    <LinearLayout
+        android:id="@+id/ll_shedule_setting_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_ll_shedule_setting_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="设置每周工作日"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="周一(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:id="@+id/textView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="周二(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:id="@+id/textView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="周三(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:id="@+id/textView04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="周四(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="周五(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:id="@+id/textView06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="周六(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:id="@+id/textView07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="周日(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="周四(工作)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_13" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shedule_setting_work_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="5dp" >
+
+        <TextView
+            android:id="@+id/tv_ll_shedule_setting_work_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="设置每天工作时长"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/imageButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="10:00(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:id="@+id/ImageButton01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="11:00(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:id="@+id/ImageButton02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="12:00(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:id="@+id/ImageButton03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="13:00(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center|center"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="2dp" >
+
+                <TextView
+                    android:id="@+id/ImageButton04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="14:00(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:id="@+id/ImageButton05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="15:00(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:id="@+id/ImageButton06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="16:00(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:id="@+id/ImageButton07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="17:00(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="2dp" >
+
+                <TextView
+                    android:id="@+id/ImageButton08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="18:00(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:id="@+id/ImageButton09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="19:00(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:id="@+id/ImageButton10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="20:00(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+
+                <TextView
+                    android:id="@+id/ImageButton11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/schedule_gridview_item_checkbox_blue"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="21:00(工作)"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_13" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_schedule_setting_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/rl_ll_shedule_setting_store_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/schedule_setting_businesslist_imageview_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/adrees_gray" />
+
+                <TextView
+                    android:id="@+id/tv_rl_ll_shedule_setting_store"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="9"
+                    android:text="工作区域"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_16" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_rl_ll_shedule_setting_store_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:text="请点击设置工作地点" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_schedule_setting_layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingTop="100dp" >
+
+        <Button
+            android:id="@+id/schedule_setting_button_save"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_save_bg_red"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+    </LinearLayout>
+
+</LinearLayout>

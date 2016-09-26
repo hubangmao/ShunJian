@@ -1,0 +1,232 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="cc.ruit.shunjianmeihairdresser.ScheduleCompileActivity" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uicomp_title_bar_red_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="59dp"
+            android:text="日期："
+            android:textSize="@dimen/textsize_17" />
+
+        <TextView
+            android:id="@+id/tv_schedule_compile_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:text="2016-01-02"
+            android:textSize="@dimen/textsize_17" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_schedule_satrt_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="开始时间："
+            android:textSize="@dimen/textsize_17" />
+
+        <TextView
+            android:id="@+id/et_schedule_compile_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:text="10:00  >"
+            android:textColor="#000000"
+            android:textSize="@dimen/textsize_17" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="客户姓名："
+            android:textSize="@dimen/textsize_17" />
+
+        <EditText
+            android:id="@+id/et_schedule_compile_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="14"
+            android:background="@drawable/edittext_shape"
+            android:ems="10"
+            android:maxLength="12" >
+        </EditText>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/call"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="客户电话："
+            android:textSize="@dimen/textsize_17" />
+
+        <EditText
+            android:id="@+id/et_schedule_compile_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="14"
+            android:background="@drawable/edittext_shape"
+            android:inputType="phone"
+            android:maxLength="11" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/iv_schedule_compile_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/call"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="工作内容："
+        android:textSize="@dimen/textsize_17" />
+
+    <EditText
+        android:id="@+id/et_schedule_compile_work_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/edittext_shape"
+        android:gravity="top"
+        android:maxLength="512"
+        android:scaleX="0.85"
+        android:textSize="@dimen/textsize_16" />
+
+    <LinearLayout
+        android:id="@+id/fl_schedule_compile_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="预计时长："
+            android:textSize="@dimen/textsize_17" />
+
+        <TextView
+            android:id="@+id/et_schedule_compile_predict_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:text="1小时  >"
+            android:textColor="#000000"
+            android:textSize="@dimen/textsize_17" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_schedule_compile_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:text="小时  >"
+            android:textSize="@dimen/textsize_17"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_schedule_compile_delete"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/red"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_17" />
+
+        <Button
+            android:id="@+id/btn_schedule_compile_save"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_17" />
+    </LinearLayout>
+
+</LinearLayout>

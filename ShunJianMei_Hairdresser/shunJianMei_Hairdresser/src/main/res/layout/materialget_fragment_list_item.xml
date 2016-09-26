@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_e5"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/materialget_listitem_textview_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_16" />
+
+    <TextView
+        android:id="@+id/materialget_listitem_textview_faction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:textSize="@dimen/textsize_16"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/materialget_listitem_textview_color"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:singleLine="true"
+        android:paddingTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_16" />
+
+    <TextView
+        android:id="@+id/materialget_listitem_textview_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_16" />
+
+    <TextView
+        android:id="@+id/materialget_listitem_textview_del"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:background="@color/gray_ab"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="删除"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_16" />
+
+</LinearLayout>

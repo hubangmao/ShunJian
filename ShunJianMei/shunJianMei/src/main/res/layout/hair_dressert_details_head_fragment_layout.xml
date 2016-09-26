@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp" >
+
+        <FrameLayout
+            android:id="@+id/fl_foodphoto_dessertdetails"
+            android:layout_width="match_parent"
+            android:layout_height="240dp" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_masterphoto_dessertdetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <RatingBar
+            android:id="@+id/ratingbar_all_masterevaluate"
+            style="@style/MyCommentRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_masterphoto_dessertdetails"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:isIndicator="true"
+            android:layout_toRightOf="@+id/iv_masterphoto_dessertdetails"
+            android:numStars="5"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/tv_photonum_masterdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/ratingbar_all_masterevaluate"
+            android:layout_marginRight="20dp"
+            android:text="0/0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_15" />
+
+        <TextView
+            android:id="@+id/tv_mastername_dessertdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ratingbar_all_masterevaluate"
+            android:layout_below="@+id/fl_foodphoto_dessertdetails"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/black"
+           android:textSize="@dimen/textsize_16" />
+
+        <TextView
+            android:id="@+id/tv_masterLevelName_dessertdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_mastername_dessertdetails"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_mastername_dessertdetails"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_16" />
+
+        <TextView
+            android:id="@+id/tv_masterStar_dessertdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_masterLevelName_dessertdetails"
+            android:layout_alignTop="@id/tv_masterLevelName_dessertdetails"
+            android:layout_marginLeft="20dp"
+            android:text=""
+             android:textColor="@color/gray_ab"
+           android:textSize="@dimen/textsize_15" />
+
+        <TextView
+            android:id="@+id/tv_OrderNum_dessertdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_mastername_dessertdetails"
+            android:layout_below="@+id/tv_mastername_dessertdetails"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@color/gray_ab"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_OrderNum_dessertdetails"
+            android:layout_below="@+id/tv_mastername_dessertdetails"
+            android:layout_toRightOf="@+id/tv_OrderNum_dessertdetails"
+            android:layout_alignLeft="@id/tv_masterStar_dessertdetails"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@color/gray_ab"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_masterphoto_dessertdetails"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/tv_OrderNum_dessertdetails"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/empty_head_photo" />
+
+    </RelativeLayout>
+
+</LinearLayout>

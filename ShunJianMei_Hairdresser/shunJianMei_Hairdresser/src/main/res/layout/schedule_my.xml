@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_grey_bg"
+    android:orientation="vertical"
+    tools:context="cc.ruit.shunjianmeihairdresser.MyScheduleActivity" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uicomp_title_bar_red_bg" />
+
+    <ListView
+        android:id="@+id/lv_my_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1.03" >
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_ab" />
+
+    <LinearLayout
+        android:id="@+id/ll_schedule_my_add"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_schedule_my_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingRight="2dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="2dp"
+            android:src="@drawable/schedule_add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="自编辑添加" />
+    </LinearLayout>
+
+</LinearLayout>

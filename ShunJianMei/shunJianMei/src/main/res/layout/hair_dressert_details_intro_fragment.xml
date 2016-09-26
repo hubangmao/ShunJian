@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="国籍/语言"
+            android:textColor="@color/gray_d8"
+            android:textSize="@dimen/textsize_14" />
+
+        <TextView
+            android:id="@+id/tv_nationality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_14" />
+    </LinearLayout> 
+    
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="工作年限"
+            android:textColor="@color/gray_d8"
+            android:textSize="@dimen/textsize_14" />
+
+        <TextView
+            android:id="@+id/tv_years"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text=""
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_14" />
+    </LinearLayout> 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="擅长发型"
+            android:textColor="@color/gray_d8"
+            android:textSize="@dimen/textsize_14" />
+
+        <TextView
+            android:id="@+id/tv_good_at_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text=""
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_hobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="个人爱好"
+            android:textColor="@color/gray_d8"
+            android:textSize="@dimen/textsize_14" />
+
+        <TextView
+            android:id="@+id/tv_preson_hobby_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text=""
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp" >
+
+        <TextView
+            android:id="@+id/tv_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="个人简介"
+            android:textColor="@color/gray_d8"
+            android:textSize="@dimen/textsize_14" />
+
+        <TextView
+            android:id="@+id/tv_preson_intro_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_14" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="13dp"
+        android:background="@color/gray_e5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_hairdessert_Comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_hairdessert_Comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="用户评论"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_16" />
+
+        <TextView
+            android:id="@+id/tv_hairdessert_Comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_hairdessert_Comment"
+            android:text="(0)"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_16" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/arrow_down_look"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/arrow_down_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/arrow_right_gray" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_e5" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_empty_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="70dp"
+            android:paddingTop="70dp"
+            android:text="没有评论"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_18"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_hairdessert_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/image_commentPhoto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/tv_commentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/image_commentPhoto"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_15" />
+
+            <RatingBar
+                android:id="@+id/ratingbar_commentScore"
+                style="@style/MyCommentRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_commentName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/image_commentPhoto"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:visibility="invisible"
+                android:stepSize="1" />
+
+            <TextView
+                android:id="@+id/tv_commentcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_commentPhoto"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/textView2"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_commentcontent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp" >
+
+                <ImageView
+                    android:id="@+id/image_comment_style1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/image_comment_style2"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/image_comment_style3"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_commmentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/gray_d8"
+                android:text="" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/rl_hairdessert_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#e53123"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/btn_intro_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_bg_white"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="预约"
+            android:textColor="@color/red_e5" />
+    </RelativeLayout>
+    -->
+
+</LinearLayout>

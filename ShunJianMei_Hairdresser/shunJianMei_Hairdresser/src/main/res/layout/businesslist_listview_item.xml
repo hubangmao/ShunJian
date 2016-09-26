@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/businesslist_linearlayout_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/businesslist_imageview_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/adrees_gray" />
+
+        <TextView
+            android:id="@+id/businesslist_textview_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="9"
+            android:text="工作区域1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_16" />
+
+        <RadioButton
+            android:id="@+id/businesslist_radiobtn_item"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:button="@drawable/chickbox_fang_bg"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/businesslist_textview_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="工作区域1"
+        android:textColor="@color/gray_ab"
+        android:textSize="@dimen/textsize_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20dp"
+        android:background="@color/gray_d8" />
+
+</LinearLayout>

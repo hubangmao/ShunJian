@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+
+<include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uicomp_title_bar_red_bg" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="center|right"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="支付订单:"
+            android:textColor="@color/gray_ab"
+            android:textSize="@dimen/textsize_16" />
+        <TextView
+            android:id="@+id/quickpay_result_orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:gravity="center|left"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_16" />
+        
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="#e0e0e0" />
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="center|right"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="支付商家:"
+            android:textColor="@color/gray_ab"
+            android:textSize="@dimen/textsize_16" />
+        <TextView
+            android:id="@+id/quickpay_result_store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:gravity="center|left"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_16" />
+        
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="#e0e0e0" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="center|right"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="美发师:"
+            android:textColor="@color/gray_ab"
+            android:textSize="@dimen/textsize_16" />
+        <TextView
+            android:id="@+id/quickpay_result_master"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:gravity="center|left"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_16" />
+        
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="#e0e0e0" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="center|right"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="实付款:"
+            android:textColor="@color/gray_ab"
+            android:textSize="@dimen/textsize_16" />
+        <TextView
+            android:id="@+id/quickpay_result_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text="¥0"
+            android:gravity="center|left"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_16" />
+        
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="#e0e0e0" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="80dp"
+            android:gravity="center|right"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="优惠金额:"
+            android:textColor="@color/gray_ab"
+            android:textSize="@dimen/textsize_16" />
+        <TextView
+            android:id="@+id/quickpay_result_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:text="¥0"
+            android:gravity="center|left"
+            android:textColor="@color/black33"
+            android:textSize="@dimen/textsize_16" />
+        
+    </LinearLayout>
+    <View
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="10dp"
+       android:background="#f2f2f2" />
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+		    <ImageView
+		        android:layout_width="20dp"
+		        android:layout_height="20dp"
+		        android:layout_marginLeft="40dp"
+            	android:layout_marginTop="15dp"
+		        android:src="@drawable/select_red" />
+		    
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="15dp"
+            	android:layout_marginTop="15dp"
+		        android:text="感谢您使用顺间消费"
+		        android:textColor="@color/black33"
+		        android:textSize="@dimen/textsize_17" />
+	    </LinearLayout>
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="0dp"
+            	android:layout_marginTop="15dp"
+		        android:text="将在顺间美发的体验分享给你的好友吧!"
+		        android:gravity="center"
+		        android:textColor="@color/black33"
+		        android:textSize="@dimen/textsize_15" />
+		 </LinearLayout>
+    	<View
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="10dp"
+       android:background="#f2f2f2" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp" >
+
+        <Button
+            android:id="@+id/btn_share_wechat_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/pay_balance_bg"
+            android:text="分享给微信好友"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_12" />
+
+        <Button
+            android:id="@+id/btn_share_wechat_friendcircle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/pay_zhifubao_bg"
+            android:text="分享给朋友圈"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_12" />
+
+        <Button
+            android:id="@+id/btn_share_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_round_gray_1"
+            android:text="给钱都不要"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_12" />
+    </LinearLayout>
+    
+</RelativeLayout>

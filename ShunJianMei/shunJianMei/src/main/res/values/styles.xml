@@ -1,0 +1,50 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- 分享dialog风格 -->
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+	<style name="MyCommentRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_comment</item>
+        <item name="android:minHeight">15dp</item>
+        <item name="android:maxHeight">25dp</item>
+    </style>
+	<style name="MyCommentRatingBarSmall" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_comment</item>
+        <item name="android:maxWidth">60dp</item>
+        <item name="android:minHeight">8dp</item>
+        <item name="android:maxHeight">13dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="MyRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_comment_big</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:maxHeight">35dp</item>
+    </style>
+    
+     <style name="dialog_activity" parent="android:Theme.Dialog" >
+        <item name="android:gravity">bottom</item>
+        <item name="android:windowFullscreen">true</item> 
+    </style>
+</resources>

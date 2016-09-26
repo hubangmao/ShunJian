@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:scrollbars="@null" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uicomp_title_bar_red_bg" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/image_orderEvaluation_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:focusable="true"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/tx_man" />
+
+                <TextView
+                    android:id="@+id/tv_orderEvaluation_master_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/image_orderEvaluation_photo"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/image_orderEvaluation_photo"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_16" />
+
+                <RatingBar
+                    android:id="@+id/ratingbar_masterevaluate"
+                    style="@style/MyCommentRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_orderEvaluation_master_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/image_orderEvaluation_photo"
+                    android:numStars="5"
+                    android:stepSize="1" />
+
+                <TextView
+                    android:id="@+id/tv_orderevaluation_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ratingbar_masterevaluate"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/image_orderEvaluation_photo"
+                    android:text=""
+                    android:textColor="@color/gray_ab"
+                    android:textSize="@dimen/textsize_14" />
+
+                <TextView
+                    android:id="@+id/tv_orderEvaluation_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/ratingbar_masterevaluate"
+                    android:layout_alignTop="@+id/tv_orderEvaluation_master_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_orderEvaluation_master_name"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/tv_masterevaluation_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_orderEvaluation_level"
+                    android:layout_alignBottom="@+id/tv_orderEvaluation_level"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/tv_orderEvaluation_level"
+                    android:text=""
+                    android:textColor="@color/gray_ab"
+                    android:textSize="@dimen/textsize_16" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/ed_hairdessert_evaluation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/content"
+                    android:gravity="top|left"
+                    android:padding="2dp"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_14" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/iv_hairdessert_evaluation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/takephotos" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_image_photo_uoload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <!--
+               <RelativeLayout
+                    android:id="@+id/rl_photo2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/image_shop_photo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ph01" />
+
+                    <ImageView
+                        android:id="@+id/image_shop_photo_del2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/delete" />
+                </RelativeLayout>
+
+               <RelativeLayout
+                    android:id="@+id/rl_photo3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/image_shop_photo3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ph02" />
+
+                    <ImageView
+                        android:id="@+id/image_shop_photo_del3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/delete" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_photo4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/image_shop_photo4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ph03" />
+
+                    <ImageView
+                        android:id="@+id/image_shop_photo_del4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/delete" />
+                </RelativeLayout>
+                -->
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="给理发师评分"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="40dp" >
+
+                <TextView
+                    android:id="@+id/tv_order_communication_evaluate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="沟通"
+                    android:textColor="@color/gray_ab"
+                    android:textSize="@dimen/textsize_15" />
+
+                <RatingBar
+                    android:id="@+id/ratingbar_communication_evaluate"
+                    style="@style/MyRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv_order_communication_evaluate"
+                    android:numStars="5"
+                    android:stepSize="1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="40dp" >
+
+                <TextView
+                    android:id="@+id/tv_order_profession_evaluate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="专业"
+                    android:textColor="@color/gray_ab"
+                    android:textSize="@dimen/textsize_15" />
+
+                <RatingBar
+                    android:id="@+id/ratingbar_profession_evaluate"
+                    style="@style/MyRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv_order_profession_evaluate"
+                    android:numStars="5"
+                    android:stepSize="1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="40dp" >
+
+                <TextView
+                    android:id="@+id/tv_order_ontime_evaluate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="守时"
+                    android:textColor="@color/gray_ab"
+                    android:textSize="@dimen/textsize_15" />
+
+                <RatingBar
+                    android:id="@+id/ratingbar_ontime_evaluate"
+                    style="@style/MyRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv_order_ontime_evaluate"
+                    android:numStars="5"
+                    android:stepSize="1" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_e5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/image_orderevalution_StorePhoto"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_prc" />
+
+                <TextView
+                    android:id="@+id/tv_orderevalution_StoreName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/image_orderevalution_StorePhoto"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/image_orderevalution_StorePhoto"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/tv_check_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_orderevalution_StoreName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/image_orderevalution_StorePhoto"
+                    android:text="地址:"
+                    android:textColor="@color/gray_ab"
+                    android:textSize="@dimen/textsize_14" />
+
+                <TextView
+                    android:id="@+id/tv_orderevalutions_StoreAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_orderevalution_StoreName"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/tv_check_tip"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/gray_ab"
+                    android:textSize="@dimen/textsize_14" />
+
+                <RatingBar
+                    android:id="@+id/ratingbar_orderevalutions_StoreScore"
+                    style="@style/MyCommentRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/image_orderevalution_StorePhoto"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/image_orderevalution_StorePhoto"
+                    android:numStars="5"
+                    android:stepSize="1" />
+
+                <TextView
+                    android:id="@+id/tv_orderevalutions_OrderNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/image_orderevalution_StorePhoto"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/ratingbar_orderevalutions_StoreScore"
+                    android:text=""
+                    android:textColor="@color/gray_ab"
+                    android:textSize="@dimen/textsize_12" />
+
+                <TextView
+                    android:id="@+id/tv_orderevalutions_CarNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/image_orderevalution_StorePhoto"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/tv_orderevalutions_OrderNum"
+                    android:text=""
+                    android:textColor="@color/gray_ab"
+                    android:textSize="@dimen/textsize_12" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <EditText
+                    android:id="@+id/ed_Store_evaluation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/content"
+                    android:gravity="top|left"
+                    android:padding="2dp"
+                    android:textColor="@color/black33"
+                    android:textSize="@dimen/textsize_14" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/iv_Store_evaluation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/takephotos" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_image_Storephoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <!--
+                <RelativeLayout
+                    android:id="@+id/rl_Storephoto2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/image_shop_Storephoto2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ph01" />
+
+                    <ImageView
+                        android:id="@+id/image_shop_Storephoto_del2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/delete" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_Storephoto3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/image_shop_Storephoto3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ph02" />
+
+                    <ImageView
+                        android:id="@+id/image_shop_Storephoto_del3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/delete" />
+                </RelativeLayout>
+                -->
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="给理发店评分"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="40dp" >
+
+                <TextView
+                    android:id="@+id/tv_order_environment_evaluate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="环境"
+                    android:textColor="@color/gray_ab"
+                    android:textSize="@dimen/textsize_15" />
+
+                <RatingBar
+                    android:id="@+id/ratingbar_environment_evaluate"
+                    style="@style/MyRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv_order_environment_evaluate"
+                    android:numStars="5"
+                    android:stepSize="1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="60dp"
+                android:paddingBottom="15dp" >
+
+                <TextView
+                    android:id="@+id/tv_order_traffic_evaluate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="交通"
+                    android:textColor="@color/gray_ab"
+                    android:textSize="@dimen/textsize_15" />
+
+                <RatingBar
+                    android:id="@+id/ratingbar_traffic_evaluate"
+                    style="@style/MyRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv_order_traffic_evaluate"
+                    android:numStars="5"
+                    android:stepSize="1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:background="#e53123"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <Button
+                    android:id="@+id/btn_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_bg_white"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="发表"
+                    android:textColor="@color/red_e5" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

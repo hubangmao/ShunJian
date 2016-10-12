@@ -72,7 +72,7 @@ import de.greenrobot.event.EventBus;
 /**
  * @ClassName: OrderFragment
  * @Description: 订单
- * @author: lee
+ * @author: hbm
  * @date: 2015年10月12日 下午4:03:42
  */
 public class OrderFragment extends BaseFragment
